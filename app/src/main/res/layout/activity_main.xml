@@ -6,71 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#B2EBF2"
-        android:orientation="vertical">
+        android:layout_height="match_parent" >
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:scaleType="centerCrop"
-        android:layout_gravity="center"
-        android:src="@drawable/img_1" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" >
 
-    <TextView
-        style="@style/TextAppearance.AppCompat.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="0.05"
-        android:layout_gravity="center"
-        android:background="@color/teal_200"
-        android:text="Happy birthday Rohan"
-        android:textAllCaps="true"
-        android:textColor="#000000"
-        android:textStyle="italic" />
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.035"
-        android:text="People invited to the party"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today is Rohan's Birthday"
+                android:layout_toRightOf="@id/photo" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.035"
-        android:text="1) Ishika Juneja"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000" />
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="He is 23 years old now."
+                android:layout_toRightOf="@id/photo"
+                android:layout_below="@id/name" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.035"
-        android:text="2)Sarthak Thombre"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="He lives in Pune"
+                android:layout_toRightOf="@id/photo"
+                android:layout_below="@id/age"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.035"
-        android:text="3)Raj Rajnandani,"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000" />
+        </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.035"
-        android:text="4)Liana Petty"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000" />
 
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
