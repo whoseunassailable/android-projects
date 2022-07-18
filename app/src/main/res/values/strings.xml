@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BIrthday Greet</string>
+    <string name="hello_rohan">Hello Rohan!</string>
+    <string name="happ">Happ</string>
+    <string name="happy_birthday_rohan">Happy Birthday Rohan !</string>
+    <string name="people_invited_to_the_party_ishika_sarthak_lenny_karol">People Invited to the party : Ishika, Sarthak, Lenny, Karol</string>
+    <string name="people_invited_to_the_party">people_invited_to_the_party_</string>
+</resources>
