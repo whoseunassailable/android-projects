@@ -11,21 +11,28 @@
         android:layout_height="match_parent" >
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="200dp" >
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/teal_200"
+            android:layout_margin="8dp">
 
             <ImageView
                 android:id="@+id/photo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/img_1" />
+                android:src="@drawable/img_1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Today is Rohan's Birthday"
-                android:layout_toRightOf="@id/photo" />
+                android:layout_toRightOf="@id/photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
 
             <TextView
                 android:id="@+id/age"
@@ -33,14 +40,20 @@
                 android:layout_height="wrap_content"
                 android:text="He is 23 years old now."
                 android:layout_toRightOf="@id/photo"
-                android:layout_below="@id/name" />
+                android:layout_below="@id/name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="He lives in Pune"
                 android:layout_toRightOf="@id/photo"
-                android:layout_below="@id/age"/>
+                android:layout_below="@id/age"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
 
         </RelativeLayout>
 
